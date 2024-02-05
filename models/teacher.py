@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields
-from . import subject
 
 class Teacher(models.Model):
     _name = 'school.teacher'

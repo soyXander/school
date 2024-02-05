@@ -11,5 +11,5 @@ class Subject(models.Model):
     max_students = fields.Integer(string='Max Students')
     active = fields.Boolean(string='Active', default=True)
     student_ids = fields.Many2many('school.student', string='Students')
-    teacher_id = fields.Many2one('school.teacher', string='Teacher')
+    teacher_id = fields.Many2one('school.teacher', string='Teacher', inverse_name='subject_ids')
     

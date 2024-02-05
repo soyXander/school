@@ -8,7 +8,7 @@
             <field name="arch" type="xml">
                 <tree>
                     <field name="name" widget="char" />
-                    <field name="credits" widget="float" optional="show"/>
+                    <field name="credits" widget="float"/>
                     <field name="max_students" widget="integer" />
                     <field name="active" widget="boolean" />
                 </tree>
