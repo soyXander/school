@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "School Subject",
+    'name': "School Management",
 
     'summary': """
-        Manage school subject data""",
+        Manage school data""",
 
     'description': """
-        Manage school subject data in Odoo with this module.
+        Manage school data in Odoo with this module.
     """,
 
     'author': "Gabriel Humerez Romero",

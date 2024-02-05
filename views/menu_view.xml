@@ -1,4 +1,5 @@
 <odoo>
+    <!-- Menu -->
     <menuitem id="menu_school" name="School">
         <menuitem id="menu_school_subject" name="Subjects" action="action_school_subject" />
         <menuitem id="menu_school_student" name="Students" action="action_school_student" />
