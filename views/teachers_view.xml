@@ -19,7 +19,7 @@
             <field name="arch" type="xml">
                 <form>
                     <group>
-                        <field name="name" widget="char" />
+                        <field name="name" widget="char" required="1" />
                         <field name="profile" widget="text" />
                     </group>
                 </form>

@@ -21,12 +21,12 @@
             <field name="arch" type="xml">
                 <form string="New Student">
                     <group>
-                        <field name="name" widget="char" />
+                        <field name="name" widget="char" required="1" />
                         <field name="birth_date" widget="date" />
                     </group>
                     <group>
                         <field name="age" widget="integer" />
-                        <!-- <field name="final_exam_grade" widget="float" /> -->
+                        <field name="final_exam_grade" widget="float" />
                     </group>
                 </form>
             </field>

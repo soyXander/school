@@ -23,10 +23,10 @@
                 <form string="New Subject">
                     <group>
                         <field name="name" widget="char" required="1"/>
-                        <field name="credits" widget="float" />
+                        <field name="credits" widget="float" required="1" />
                     </group>
                     <group>
-                        <field name="max_students" widget="integer" />
+                        <field name="max_students" widget="integer" required="1" />
                         <field name="active" widget="boolean" />
                     </group>
                     <group>
