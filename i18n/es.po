@@ -31,9 +31,19 @@ msgid "Birth Date"
 msgstr "Fecha de Nacimiento"
 
 #. module: school
+#: model_terms:ir.actions.act_window,help:school.action_school_student
+msgid "Add new students"
+msgstr "Agregar nuevos estudiantes"
+
+#. module: school
 #: model_terms:ir.actions.act_window,help:school.action_school_subject
-msgid "Create new subjects"
-msgstr "Crear nuevos asignaturas"
+msgid "Add new subjects"
+msgstr "Agregar nuevas asignaturas"
+
+#. module: school
+#: model_terms:ir.actions.act_window,help:school.action_school_teacher
+msgid "Add new teachers"
+msgstr "Agregar nuevos profesores"
 
 #. module: school
 #: model:ir.model.fields,field_description:school.field_school_student__create_uid
