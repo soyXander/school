@@ -18,7 +18,11 @@
 
     'depends': ['base'],
 
-    'data': [],
+    'data': [
+        'views/subjects_view.xml',
+        'views/students_view.xml',
+        'views/teachers_view.xml',
+    ],
 
     'application': True,
     'installable': True,

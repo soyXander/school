@@ -1,0 +1,52 @@
+<odoo>
+    <data>
+
+        <!-- Tree -->
+        <record id="view_school_subject_tree" model="ir.ui.view">
+            <field name="name">school.subject.tree</field>
+            <field name="model">school.subject</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" widget="char" />
+                    <field name="credits" widget="float" optional="show"/>
+                    <field name="max_students" widget="integer" />
+                    <field name="active" widget="boolean" />
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form View -->
+        <record id="view_school_subject_form" model="ir.ui.view">
+            <field name="name">school.subject.form</field>
+            <field name="model">school.subject</field>
+            <field name="arch" type="xml">
+                <form string="New Subject">
+                    <group>
+                        <field name="name" widget="char" required="1"/>
+                        <field name="credits" widget="float" />
+                    </group>
+                    <group>
+                        <field name="max_students" widget="integer" />
+                        <field name="active" widget="boolean" />
+                    </group>
+                    <group>
+                        <field name="student_ids" widget="many2many" />
+                        <field name="teacher_id" widget="many2one" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- Action -->
+        <record id="action_school_subject" model="ir.actions.act_window">
+            <field name="name">School Subjects</field>
+            <field name="res_model">school.subject</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                Create new subjects
+              </p>
+            </field>
+        </record>
+    </data>
+</odoo>
