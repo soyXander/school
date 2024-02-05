@@ -1,9 +1,7 @@
 <odoo>
-    <data>
-        <menuitem id="menu_school" name="School" />
-            <menuitem id="menu_school_subject" name="Subjects" parent="menu_school" action="action_school_subject" /></menuitem>
-            <menuitem id="menu_school_student" name="Students" parent="menu_school" action="action_school_student" /></menuitem>
-            <menuitem id="menu_school_teacher" name="Teachers" parent="menu_school" action="action_school_teacher" /></menuitem>
-        </menuitem>
-    </data>
+    <menuitem id="menu_school" name="School">
+        <menuitem id="menu_school_subject" name="Subjects" action="action_school_subject" />
+        <menuitem id="menu_school_student" name="Students" action="action_school_student" />
+        <menuitem id="menu_school_teacher" name="Teachers" action="action_school_teacher" />
+    </menuitem>
 </odoo>
